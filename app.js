@@ -1,7 +1,8 @@
 const playerContainer = document.querySelector('.container');
 const gridBtn = document.querySelector('.gridselect')
 const div = document.createElement('div');
-const clrBtn = document.querySelector('.clearbtn')
+const clrBtn = document.querySelector('.clearbtn');
+const error = document.querySelector('.error');
 
 
 gridBtn.addEventListener('click', layoutGrid)
@@ -20,7 +21,15 @@ function createColor(something, color){
     row = (Math.ceil(512/number));
     playerContainer.style.gridTemplateColumns = `repeat(${number}, ${col}px)`;
     playerContainer.style.gridTemplateRows = `repeat(${number}, ${row}px)`
-    playerContainer.style.backgroundColor = 'magenta';
+    playerContainer.style.backgroundColor = 'white';
+    if(number === '' || color === ''){
+        let newText = document.createTextNode('Error');
+        playerContainer.appendChild(newText);
+        newText.classList.add('error')
+        console.log('error')
+    } else {
+        console.log('ok')
+    }
     gridBtn.disabled = true;
 
     for(i=0; i<number; i++){
