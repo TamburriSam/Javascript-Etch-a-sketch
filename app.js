@@ -8,6 +8,9 @@ gridBtn.addEventListener('click', layout16Grid)
 
 clrBtn.addEventListener('click', clearGame)
 
+function createColor(something, color){
+    something.style.backgroundColor = color;
+}
 
 
  function layout16Grid(){
@@ -21,16 +24,14 @@ clrBtn.addEventListener('click', clearGame)
             div1.classList.add('row');
             div1.style.gridRowStart = `${i}`
             playerContainer.appendChild(div1);
-            console.log(i);
 
-
-
-            div1.addEventListener('mouseover', function(e){
-                div1.style.backgroundColor = 'red';
+            div1.addEventListener('mouseover', function() {
+                createColor(div1, 'orange')
             })
         }
     }
 } 
+
 
 function clearGame(){
  location.reload()
