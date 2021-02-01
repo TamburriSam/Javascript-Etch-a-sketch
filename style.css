@@ -7,13 +7,13 @@
 body {
     background-color: #cc5577;
 background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 60'%3E%3Cg %3E%3Crect fill='%23cc5577' width='11' height='11'/%3E%3Crect fill='%23ce5776' x='10' width='11' height='11'/%3E%3Crect fill='%23d05a76' y='10' width='11' height='11'/%3E%3Crect fill='%23d15c75' x='20' width='11' height='11'/%3E%3Crect fill='%23d35f74' x='10' y='10' width='11' height='11'/%3E%3Crect fill='%23d46174' y='20' width='11' height='11'/%3E%3Crect fill='%23d66473' x='30' width='11' height='11'/%3E%3Crect fill='%23d76673' x='20' y='10' width='11' height='11'/%3E%3Crect fill='%23d96972' x='10' y='20' width='11' height='11'/%3E%3Crect fill='%23da6c72' y='30' width='11' height='11'/%3E%3Crect fill='%23db6e71' x='40' width='11' height='11'/%3E%3Crect fill='%23dc7171' x='30' y='10' width='11' height='11'/%3E%3Crect fill='%23dd7471' x='20' y='20' width='11' height='11'/%3E%3Crect fill='%23de7671' x='10' y='30' width='11' height='11'/%3E%3Crect fill='%23df7971' y='40' width='11' height='11'/%3E%3Crect fill='%23e07c71' x='50' width='11' height='11'/%3E%3Crect fill='%23e17e71' x='40' y='10' width='11' height='11'/%3E%3Crect fill='%23e28171' x='30' y='20' width='11' height='11'/%3E%3Crect fill='%23e38471' x='20' y='30' width='11' height='11'/%3E%3Crect fill='%23e38771' x='10' y='40' width='11' height='11'/%3E%3Crect fill='%23e48972' y='50' width='11' height='11'/%3E%3Crect fill='%23e58c72' x='60' width='11' height='11'/%3E%3Crect fill='%23e58f73' x='50' y='10' width='11' height='11'/%3E%3Crect fill='%23e69173' x='40' y='20' width='11' height='11'/%3E%3Crect fill='%23e69474' x='30' y='30' width='11' height='11'/%3E%3Crect fill='%23e79775' x='20' y='40' width='11' height='11'/%3E%3Crect fill='%23e79a75' x='10' y='50' width='11' height='11'/%3E%3Crect fill='%23e89c76' x='70' width='11' height='11'/%3E%3Crect fill='%23e89f77' x='60' y='10' width='11' height='11'/%3E%3Crect fill='%23e8a278' x='50' y='20' width='11' height='11'/%3E%3Crect fill='%23e9a47a' x='40' y='30' width='11' height='11'/%3E%3Crect fill='%23e9a77b' x='30' y='40' width='11' height='11'/%3E%3Crect fill='%23e9aa7c' x='20' y='50' width='11' height='11'/%3E%3Crect fill='%23e9ac7e' x='80' width='11' height='11'/%3E%3Crect fill='%23eaaf7f' x='70' y='10' width='11' height='11'/%3E%3Crect fill='%23eab281' x='60' y='20' width='11' height='11'/%3E%3Crect fill='%23eab482' x='50' y='30' width='11' height='11'/%3E%3Crect fill='%23eab784' x='40' y='40' width='11' height='11'/%3E%3Crect fill='%23eaba86' x='30' y='50' width='11' height='11'/%3E%3Crect fill='%23ebbc88' x='90' width='11' height='11'/%3E%3Crect fill='%23ebbf8a' x='80' y='10' width='11' height='11'/%3E%3Crect fill='%23ebc18c' x='70' y='20' width='11' height='11'/%3E%3Crect fill='%23ebc48e' x='60' y='30' width='11' height='11'/%3E%3Crect fill='%23ebc790' x='50' y='40' width='11' height='11'/%3E%3Crect fill='%23ebc992' x='40' y='50' width='11' height='11'/%3E%3Crect fill='%23ebcc94' x='90' y='10' width='11' height='11'/%3E%3Crect fill='%23ebce97' x='80' y='20' width='11' height='11'/%3E%3Crect fill='%23ebd199' x='70' y='30' width='11' height='11'/%3E%3Crect fill='%23ecd39c' x='60' y='40' width='11' height='11'/%3E%3Crect fill='%23ecd69e' x='50' y='50' width='11' height='11'/%3E%3Crect fill='%23ecd8a1' x='90' y='20' width='11' height='11'/%3E%3Crect fill='%23ecdba4' x='80' y='30' width='11' height='11'/%3E%3Crect fill='%23ecdda6' x='70' y='40' width='11' height='11'/%3E%3Crect fill='%23ece0a9' x='60' y='50' width='11' height='11'/%3E%3Crect fill='%23ede2ac' x='90' y='30' width='11' height='11'/%3E%3Crect fill='%23ede4af' x='80' y='40' width='11' height='11'/%3E%3Crect fill='%23ede7b2' x='70' y='50' width='11' height='11'/%3E%3Crect fill='%23ede9b5' x='90' y='40' width='11' height='11'/%3E%3Crect fill='%23eeecb8' x='80' y='50' width='11' height='11'/%3E%3Crect fill='%23EEB' x='90' y='50' width='11' height='11'/%3E%3C/g%3E%3C/svg%3E");
-background-attachment: fixed;
+background-attachment:fixed ;
 background-size: cover;
 text-align: center;
-margin-top:30px;
 display:grid;
 grid-template-columns: repeat(16, 102px);
 grid-template-rows: repeat(10, 100px);
+overflow: hidden;
 }
 
 .title {
@@ -26,7 +26,7 @@ grid-template-rows: repeat(10, 100px);
     /* border: 2px solid; */
   /*   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;   */  
     grid-row-start: 1 ;
-    grid-column: 9 / 12;
+    grid-column: 3 / 12;
     margin-top:60px;
     z-index:2;
     font-size: 32px;
@@ -41,7 +41,7 @@ grid-template-rows: repeat(10, 100px);
     margin-top:50px;
     display:grid;
     grid-row: 1;
-    grid-column: 5;
+    grid-column: 2; 
     grid-template-columns: 3fr 2fr 2fr;
     grid-template-rows: 1fr 1fr;
     border-radius:10px;
@@ -60,8 +60,10 @@ grid-template-rows: repeat(10, 100px);
     border: 2px solid;
     border-radius:10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;   
-    grid-row: 9;
-    grid-column: 6;
+    grid-row: 7;
+    margin-top: 60px;
+    z-index: 50;
+    grid-column: 5;
 }
 
 .clearbtn {
@@ -74,8 +76,10 @@ grid-template-rows: repeat(10, 100px);
     border: 2px solid;
     border-radius:10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;    
-    grid-row: 9;
-    grid-column: 12;
+    grid-row: 7;
+    z-index: 50;
+    margin-top:60px;
+    grid-column: 9;
 }
 
 .scrollOne {
@@ -84,7 +88,7 @@ grid-template-rows: repeat(10, 100px);
     border-radius:50%;
     z-index: 50;
     grid-row: 7;
-    grid-column: 5;
+    grid-column: 2;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     border: 3px dotted black;
 }
@@ -99,7 +103,7 @@ grid-template-rows: repeat(10, 100px);
     border: 3px dotted black;
     z-index:50;
     grid-row:7;
-    grid-column: 15;
+    grid-column: 12;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
@@ -126,13 +130,79 @@ grid-template-rows: repeat(10, 100px);
     font-size:64px;
     
 } 
+@media only screen
+and (min-device-width : 768px) {
+    .container{
+        grid-column: 1;
+        margin-left:30px;
+    }
+    .title{
+        grid-column: 1/12;
+        margin-left:30px;
+    }
+    .gridselect{
+        grid-column:4 ;
+        margin-left:30px;
+    }
+    .clearbtn {
+        grid-column: 8;
+        margin-left:30px;
+    }
+    .scrollOne{
+        grid-column: 1;
+        margin-left:30px;
+    }
+    .scrollTwo{
+        grid-column: 11;
+        margin-left:30px;
+    }
+    }
 
-/* @media only screen
-and (min-width : 1824px) {
-.container {
-    grid-row: 2;
+
+
+@media only screen
+and (min-width : 1224px) {
+.container{
+    grid-column: 2;
+    margin-right:90px;
 }
 .title{
-    grid-column: 5/10;
+    grid-column: 3/12;
 }
-} */
+.gridselect{
+    grid-column:5 ;
+}
+.clearbtn {
+    grid-column: 9;
+}
+.scrollOne{
+    grid-column: 2;
+}
+.scrollTwo{
+    grid-column: 12;
+}
+}
+
+
+@media only screen
+and (min-width : 1424px) {
+.container{
+    grid-column: 3;
+    margin-right:30px;
+}
+.title{
+    grid-column: 5/12;
+}
+.gridselect{
+    grid-column: 6;
+}
+.clearbtn{
+    grid-column: 10;
+}
+.scrollOne{
+    grid-column: 3;
+}
+.scrollTwo{
+    grid-column: 13;
+}
+}
