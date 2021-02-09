@@ -3,6 +3,10 @@ const gridBtn = document.querySelector('.gridselect')
 const div = document.createElement('div');
 const clrBtn = document.querySelector('.clearbtn');
 const error = document.querySelector('.error');
+const colorBtn = document.querySelector('.colorbtn');
+const eraseBtn = document.querySelector('.erasebtn');
+
+
 
 
 gridBtn.addEventListener('click', layoutGrid)
@@ -17,18 +21,14 @@ function createColor(something, color){
  function layoutGrid(number, col, row, color){
     number = prompt('Select a number less or equal to 100');
     color = prompt('Select a color')
-    col = 960/number;
-    row = (Math.ceil(512/number));
+    col = 900/number;
+    row = (Math.ceil(518/number));
     playerContainer.style.gridTemplateColumns = `repeat(${number}, ${col}px)`;
     playerContainer.style.gridTemplateRows = `repeat(${number}, ${row}px)`
-    playerContainer.style.backgroundColor = 'green';
-    // make the error its own function and put here
+    playerContainer.style.backgroundColor = 'white';
+    
     if(number === '' || color === ''){
-        let newText = document.createTextNode('Error');
-        playerContainer.appendChild(newText);
-        //stuck right here in error messages
-        newText.classList.add('error')
-        console.log('error')
+        alert('Error. Nothing Selected. Please hit Clear and enter some values.')
     } else {
         console.log('ok')
     }
@@ -42,11 +42,22 @@ function createColor(something, color){
             playerContainer.appendChild(div1);
 
             div1.addEventListener('mouseover', function() {
-                createColor(div1, `${color}`)
+                createColor(div1, `${color}`);
+
+                colorBtn.addEventListener('click', function(){
+                    color = `${'#'+Math.floor(Math.random()*16777215).toString(16)}`;
+                })
+
+                eraseBtn.addEventListener('click', function(){
+                    color = `white`;
+                })
             })
         }
     }
+
 } 
+
+
 
 
 function clearGame(){
