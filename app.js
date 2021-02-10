@@ -5,6 +5,8 @@ const clrBtn = document.querySelector('.clearbtn');
 const error = document.querySelector('.error');
 const colorBtn = document.querySelector('.colorbtn');
 const eraseBtn = document.querySelector('.erasebtn');
+const scrollOne = document.querySelector('.scrollOne');
+const scrollTwo = document.querySelector('.scrollTwo');
 
 
 
@@ -34,6 +36,18 @@ function createColor(something, color){
     }
     gridBtn.disabled = true;
 
+    //activate fun scroll buttons
+    scrollOne.style.animationName = 'spin';
+    scrollOne.style.animationDuration = '5000ms';
+    scrollOne.style.animationIterationCount = 'infinite';
+    scrollOne.style.animationTimingFunction = 'linear';
+
+    scrollTwo.style.animationName = 'spin';
+    scrollTwo.style.animationDuration = '5000ms';
+    scrollTwo.style.animationIterationCount = 'infinite';
+    scrollTwo.style.animationTimingFunction = 'linear';
+    
+
     for(i=0; i<number; i++){
         for(j=1; j<=number; j++){
             let div1 = document.createElement('div');
@@ -57,7 +71,7 @@ function createColor(something, color){
 
 } 
 
-
+//etch a sketch 2021?? like a modern etch a sketch instead of going classic. 
 
 
 function clearGame(){
