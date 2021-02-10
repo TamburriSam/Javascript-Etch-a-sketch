@@ -1,6 +1,6 @@
 
 *{
-    font-family: 'Bad Script', cursive;
+    font-family: 'Kaushan Script', cursive;
 }
 
 body {
@@ -30,10 +30,11 @@ body::after{
 .title {
     grid-row-start: 1 ;
     grid-column: 3 / 12;
-    margin-top:60px;
+    margin-top:55px;
     z-index:2;
     font-size: 48px;
     letter-spacing: 6px;
+    color:rgba(0, 0, 0, 0.795);
     text-shadow: 2px 2px 3px rgba(182, 172, 30, 0.5);
     line-height: 70px;
 
@@ -41,7 +42,7 @@ body::after{
 
 .magic {
     grid-row: 1;
-    margin-top:60px;
+    margin-top:70px;
     text-shadow: 2px 2px 3px rgba(182, 172, 30, 0.5);
     color:rgba(0, 0, 0, 0.712);
     grid-column: 4;
@@ -50,7 +51,7 @@ body::after{
 
 .screen {
     grid-row: 1;
-    margin-top:60px;
+    margin-top:70px;
     text-shadow: 2px 2px 3px rgba(182, 172, 30, 0.5);
     color:rgba(0, 0, 0, 0.623);
     grid-column: 10;
@@ -70,10 +71,13 @@ body::after{
     grid-template-columns: 3fr 2fr 2fr;
     grid-template-rows: 1fr 1fr;
     border-radius:90px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;    
+    box-shadow: 5px 5px 15px 5px #000000;
     z-index:1;
     justify-content: center;
     overflow:hidden;
+
+    box-shadow: inset 0 0 10px #000000;
+
 }
 
 .gridselect {
@@ -89,6 +93,15 @@ body::after{
     z-index: 50;
     grid-column: 4;
     cursor: pointer;
+    transition: 0.2s all;
+}
+.gridselect:hover{
+    transform:scale(.95);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 2px 0px;
+}
+.gridselect:active {
+    transform:scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); 
 }
 
 .clearbtn {
@@ -104,7 +117,15 @@ body::after{
     margin-top: 60px;
     grid-column: 6;
     cursor: pointer;
-
+    transition: 0.2s all;
+}
+.clearbtn:hover{
+    transform:scale(.95);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 2px 0px;
+}
+.clearbtn:active {
+    transform:scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); 
 }
 
 .colorbtn {
@@ -114,14 +135,23 @@ body::after{
     background-color: #F05151;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 4px 4px 0px;
     cursor: pointer;
-
+    transition: 0.2s all;
     border-radius:10px;
     font-size:24px;
     grid-column: 7;
     margin-left: 50px;
     grid-row: 7;
     margin-top: 60px;
-    z-index: 6
+    z-index: 6;
+    line-height: 50px;
+}
+.colorbtn:hover{
+    transform:scale(.95);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 2px 0px;
+}
+.colorbtn:active {
+    transform:scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); 
 }
 
 .erasebtn {
@@ -137,8 +167,18 @@ body::after{
     margin-left: 90px;
     grid-row: 7;
     margin-top: 60px;
-    z-index: 6
-    
+    z-index: 6;
+    transition: 0.2s all;
+    line-height: 50px;
+}
+.erasebtn:hover{
+    transform:scale(.95);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 2px 0px;
+
+}
+.erasebtn:active {
+    transform:scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); 
 }
 
 .scrollOne {
@@ -150,6 +190,11 @@ body::after{
     grid-column: 2;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     border: 3px dotted black;
+    transition: 0.2s all;
+}
+.scrollOne:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 2px 0px;
+    transform:scale(0.98);
 }
 
 
@@ -165,12 +210,26 @@ body::after{
     grid-column: 11;
     margin-left:35px;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    transition: 0.2s all;
+}
+.scrollTwo:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 2px 0px;
+    transform:scale(0.98);
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
 }
 
 
 .row {
     background-color: white;
-    border:1px solid rgba(128, 128, 128, 0.459)
+    border:1px solid rgba(128, 128, 128, 0.082)
 }
 .row:hover {
     background-color:pink;
@@ -191,82 +250,72 @@ body::after{
 
 
 
-
-/* 
-
-@media only screen
-and (min-device-width : 768px) {
-    .container{
-        grid-column: 1;
-        margin-left:30px;
-    }
-    .title{
-        grid-column: 1/12;
-        margin-left:30px;
-    }
-    .gridselect{
-        grid-column:4 ;
-        margin-left:30px;
-    }
-    .clearbtn {
-        grid-column: 8;
-        margin-left:30px;
-    }
-    .scrollOne{
-        grid-column: 1;
-        margin-left:30px;
-    }
-    .scrollTwo{
-        grid-column: 11;
-        margin-left:30px;
-    }
-    }
-
-
-
-@media only screen
-and (min-width : 1224px) {
-.container{
-    grid-column: 2;
-    margin-right:90px;
-}
-.title{
-    grid-column: 3/12;
-}
-.gridselect{
-    grid-column:5 ;
-}
-.clearbtn {
-    grid-column: 9;
-}
-.scrollOne{
-    grid-column: 2;
-}
-.scrollTwo{
-    grid-column: 12;
-}
-}
-
-
 @media only screen
 and (min-width : 1424px) {
 .container{
-    grid-column: 3;
+    grid-column: 4;
     margin-right:30px;
 }
+.magic {
+    grid-column: 6;
+}
+.screen {
+    grid-column: 12;
+}
 .title{
-    grid-column: 5/12;
+    grid-column: 7/12;
 }
 .gridselect{
     grid-column: 6;
 }
 .clearbtn{
-    grid-column: 10;
+    grid-column: 8;
 }
 .scrollOne{
-    grid-column: 3;
+    grid-column: 4;
 }
 .scrollTwo{
     grid-column: 13;
 }
-} */
+.colorbtn {
+    grid-column: 9;
+} 
+.erasebtn {
+    grid-column: 11;
+}}
+
+@media only screen
+and (min-width:1815px){
+    .container{
+        grid-column: 5;
+        margin-right:30px;
+    }
+    .magic {
+        grid-column: 6;
+    }
+    .screen {
+        grid-column: 13;
+    }
+    .title{
+        grid-column: 6/14;
+        margin-left:30px;
+    }
+    .gridselect{
+        grid-column: 7;
+    }
+    .clearbtn{
+        grid-column: 9;
+    }
+    .scrollOne{
+        grid-column: 5;
+    }
+    .scrollTwo{
+        grid-column: 14;
+    }
+    .colorbtn {
+        grid-column: 10;
+    } 
+    .erasebtn {
+        grid-column: 12;
+    }}
+}
